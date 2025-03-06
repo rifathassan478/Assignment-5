@@ -13,7 +13,6 @@ let formattedDate = now.toLocaleDateString('en-US', options).replace(',', '');
 const dynamicTime = document.getElementById('dynamic-time');
 dynamicTime.innerText = `${formattedDate}`;
 
-
 const completedButtons = document.querySelectorAll('.completed-btn');
 for (const completedButton of completedButtons) {
   completedButton.addEventListener('click', function (event) {
@@ -23,7 +22,6 @@ for (const completedButton of completedButtons) {
         .innerHTML;
     console.log(title);
     console.log(completedButtons.length);
-
 
     // time start
     let now = new Date();
@@ -45,7 +43,6 @@ for (const completedButton of completedButtons) {
           </div>`;
     historyList.appendChild(div);
 
-    
     // Task Assigned
     const assgintedTask = document.getElementById('assigned-task');
     const currentAssgintedTask = parseInt(assgintedTask.innerText);
