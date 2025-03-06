@@ -38,8 +38,8 @@ for (const completedButton of completedButtons) {
 
     const historyList = document.getElementById('history-list');
     const div = document.createElement('div');
-    div.innerHTML = `<div class="text-center my-5">
-            <h3>You have Completed the task ${title} at ${formattedTime}</h3>
+    div.innerHTML = `<div class="text-center my-5 bg-gray-100 p-5 rounded-lg">
+            <h3 class="text-black">You have Completed the task ${title} at ${formattedTime}</h3>
           </div>`;
     historyList.appendChild(div);
 
